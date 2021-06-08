@@ -1,0 +1,143 @@
+<!DOCTYPE html> 
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<link href='https://fonts.googleapis.com/css?family=Londrina+Shadow' rel='stylesheet' type='text/css'>
+<style>
+body {
+ font-family: helvetica, sans-serif;  
+ margin: 0 auto; 
+ max-width: 600px; 
+ background: #232323;
+}
+div {
+ height: 200px;
+ background-size: cover;
+ position: relative;
+ margin: 40px 0 0 0;
+ border-radius: 12px;
+}
+h1 {
+ font-family: 'Londrina Shadow', cursive;
+ text-align: center;
+ font-size: 75px;
+ color: #380303;
+ margin: 60px 0 0 0;
+}
+h2 {
+ text-align: center;
+ color: #bbbbbb;
+ margin: 0px 0 70px 0;
+}
+p {
+ color: rgba(255,255,255,1);
+ background: black;
+ background: linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4)); 
+ background: -webkit-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+ background: -moz-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4)); 	
+ padding: 10px; 
+ line-height: 28px;
+ text-align: justify;
+ position: absolute;
+ bottom: 0;
+ margin: 0;
+ height: 30px;
+ transition: height .5s;
+ -webkit-transition: height .5s;
+ -moz-transition: height .5s;
+}
+ 
+small {                    
+ opacity: 0;
+}
+ 
+.show-description p {
+ height: 150px;
+}
+ 
+.show-description small {
+ opacity: 1;
+}
+ 
+.first{
+ background-image: url("https://gbc-cdn-public-media.azureedge.net/img48312.1426x713.jpg");
+}
+.second{
+ background-image: url("https://media.istockphoto.com/photos/grilled-beef-steak-with-rosemary-salt-and-pepper-picture-id619755658?k=6&m=619755658&s=612x612&w=0&h=mKmM9lRxB2NJr0QevItA5Aq8wArN_z8Wr2IRGjfEzm4=");
+}
+.third{
+ background-image: url("https://st2.depositphotos.com/5528884/11871/i/600/depositphotos_118719914-stock-photo-medium-rare-steak-burger-on.jpg");
+}
+.fourth{
+ background-image: url("https://www.elitereaders.com/wp-content/uploads/2016/02/steak_1718547b.jpg");
+}
+.fifth{
+ background-image: url("https://www.teka.com/hy-am/wp-content/uploads/sites/130/2019/09/cocinar-carne-al-horno.jpg");
+}
+.temp {
+ float: right;
+}
+@media (max-width: 500px) {
+ h1 {
+   font-size: 50px;
+   margin-top: 20px;
+   line-height: 40px;
+ }
+ h2 {
+   font-size: 20px;
+   margin: 20px 0 30px 0;
+ }
+ div {
+   margin: 20px 12px 0 12px;
+ }
+ p {
+   font-size: 20px;
+   line-height: 24px;
+ }
+ small {
+   font-size: 16px;
+ }
+}
+ 
+</style>
+ 
+</head>
+ 
+<body>
+<h1>HOME COOKING</h1>
+<h2>best way to cook steak</h2>
+<div class="first">
+<p>Blue Rare   <span class="temp">115F</span><br />
+<small> blue rare steak is seared on the outside, to brown the meat without significantly cooking the inside.
+<br>Grill Time at 400F   1:30 </small></p>
+</div>
+ 
+<div class="second">
+<p>Rare  <span class="temp">120F-130F</span><br />
+<small>The steak has cool-to-warm red center, and soft, tender texture. This is an excellent choice for leaner steaks like top sirloin or filet mignon that don’t have as much fat to melt.
+<br>Grill Time at 400F   2:30 </small></p>
+</div>
+ 
+<div class="third">
+<p>Medium Rare  <span class="temp">130F-135F</span><br />
+<small>Steak will have warm red center – perfect steak texture with a nice brown crust. Cooking to medium rare allows the fat (marbling in the steak) to render and add buttery, rich flavors to your steak. This is the ideal doneness for a juicy, flavorful steak. 
+<br>Grill Time at 400F   3:30 </small></p>
+</div>
+ 
+<div class="fourth">
+<p>Medium Well <span class="temp">135-145F</span><br />
+<small>The steak will have a mostly brown center and firm texture. The meat will be drier as water evaporates during the cooking process.
+<br>Grill Time at 400F   4:30 </small></p>
+</div>
+
+<div class="fifth">
+<p>Well Done <span class="temp"> 155F-165F </span><br />
+<small>The steak will have no color left, will be very firm and much drier. The meat loses fat and moisture as it cooks, resulting in a dry, tougher texture. We don’t recommend cooking to this doneness.
+<br>Grill Time at 400F   6:30 </small></p>
+</div>
+ 
+<script>
+$('div').on('click', function() {
+ $(this).toggleClass('show-description');
+});
+</script>
+</body>
